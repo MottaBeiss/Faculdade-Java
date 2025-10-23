@@ -9,5 +9,12 @@ public class Main {
         
         Gerente gerente1 = new Gerente (1, "11111111111", "Arthur");
         System.out.println(gerente1.calcularSalario());
+
+        Funcionario funcionario = new Funcionario(2, "22222222222", "Rebeca");
+        System.out.println(funcionario.calcularSalario());
+
+        Secretaria secretaria = new Secretaria(3, "33333333333","Joana");
+        System.out.println(secretaria.calcularSalario());
+
     }
 }

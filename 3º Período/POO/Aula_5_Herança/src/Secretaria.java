@@ -1,3 +1,14 @@
-public class Secretaria {
+public class Secretaria extends Funcionario {
+
+    private double salario;
+
+    public Secretaria(int id, String cpf, String nome) {
+        super(id, cpf, nome);
+    }
+
+    public double calcularSalario (){
+        salario = SALARIO_BASE * 2;
+        return salario;
+    }
 
 }
