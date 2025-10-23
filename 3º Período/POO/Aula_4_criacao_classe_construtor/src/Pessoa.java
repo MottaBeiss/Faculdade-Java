@@ -1,20 +1,22 @@
 public class Pessoa {
 
-    private String nome; // Construtor altera os valores dessas variáveis
+    private String nome; // Construtor altera os valores dessas variáveis (Atributos do objeto)
     private int idade;
 
 
-    public Pessoa(String nome, int idade) {
+    public Pessoa(String nome, int idade) { //Criação do construtor
         this.nome = nome;
         this.idade = idade;
 
     }
 
-    public String getNome() {
+    //Tudo método
+
+    public String getNome() { // Método de acesso para obter um valor
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome) { // Método de acesso para alterar um valor
         this.nome = nome;
     }
 
@@ -26,7 +28,7 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public void fazerAniversario() {
+    public void fazerAniversario() { // Método de ação para somar a idade após fazer aniversário
         idade++;
 
     }

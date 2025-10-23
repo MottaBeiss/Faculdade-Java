@@ -1,18 +1,30 @@
-## Getting Started
+Lista de Exercícios 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1. Escreva uma função recursiva que retorne a soma dos dígitos de um 
+número inteiro.
 
-## Folder Structure
+2. Escreva uma função recursiva que calcule a potência de um número, dado 
+a base e o expoente. 
 
-The workspace contains two folders by default, where:
+3. Implemente uma função recursiva que inverta uma string. 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+4. Escreva uma função recursiva que encontre o maior elemento em um 
+array de inteiros. 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+5. Implemente uma função recursiva que calcule a soma de todos os 
+elementos de um array. 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+6. Escreva uma função recursiva que verifique se uma string é um 
+palíndromo (lê-se da mesma forma de frente para trás e vice-versa). 
 
-## Dependency Management
+7. Implemente uma função recursiva para calcular o Máximo Divisor 
+Comum (MDC) de dois números usando o algoritmo de Euclides. 
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+8. Escreva uma função recursiva que conte o número de elementos pares em 
+um array. 
+
+9. Implemente uma função recursiva que calcule a soma de todos os 
+números naturais de 1 a n. 
+
+10. Escreva uma função recursiva que converta um número decimal para 
+binário. 

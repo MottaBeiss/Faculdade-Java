@@ -1,29 +1,42 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+ Lista de Exercícios
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+ 1. Escreva um programa que crie um vetor de numeros inteiros, receba 10 
+valores informados pelo usuario, imprima todos os valores pares e depois 
+todos os valores ímpares.
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+ 2. Escreva um programa que leia 10 valores inteiros, informados pelo 
+usuario e armazene-os em um vetor. Apos isso, lendo o vetor uma unica 
+vez e sem criar outros vetores, mostre na tela a media dos valores 
+armazenados no vetor ponderados pelos índices nos quais estao 
+armazenados.
 
-### VS Code ###
-.vscode/
+ 3. Leia um valor e faça um programa que coloque o valor lido na primeira 
+posiçao de um vetor de 10 posiçoes. Em cada posiçao subsequente, 
+coloque o dobro do valor da posiçao anterior. Por exemplo, se o valor lido 
+for 1, os valores do vetor devem ser 1, 2, 4, 8 e assim sucessivamente. 
+Mostre o vetor em seguida.
 
-### Mac OS ###
-.DS_Store
+ 4. Leia um valor X. Coloque este valor na primeira posiçao de um vetor N de 
+100 posiçoes. Em cada posiçao subsequente de N (1 ate 99), coloque a 
+metade do valor armazenado na posiçao anterior, conforme o exemplo 
+abaixo. Imprima o vetor N.
+
+ 5. Faça um programa que leia um valor e apresente o numero de Fibonacci 
+correspondente a este valor lido. Lembre-se que os 2 primeiros elementos 
+da serie de Fibonacci sao 0 e 1 e cada proximo termo e a soma dos 2 
+anteriores a ele. Todos os valores de Fibonacci calculados neste problema 
+devem caber em um inteiro de 64 bits sem sinal.
+
+ 6. Crie uma matriz bidimensional quadrada para armazenar 9 valores 
+inteiros informados pelo usuario. Depois, calcule e mostre na tela o 
+determinante da matriz.
+
+ 7. Escreva um programa que receba um numero inteiro 2≤𝑁≤5, crie uma 
+matriz quadrada 𝑁×𝑁, preencha a matriz com valores de 1 ate 𝑁2, calcule 
+o quadrado da matriz criada e exiba o resultado na tela.
+
+ 8. Escreva um programa que calcule a multiplicaçao entre duas matrizes 
+quaisquer. Seu programa deve determinar se e possível executar a 
+multiplicaçao, e mostrar o resultado do calculo para os casos possíveis. 
+Quando nao for possível efetuar a operaçao, uma mensagem deve ser 
+exibida na tela
