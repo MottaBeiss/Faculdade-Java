@@ -42,7 +42,7 @@ public class Question7 { //DÚVIDA
             System.out.println();
         }
 
-        System.out.println("\n Matriz Resultado: (Quadrado da Matriz):)");
+        System.out.println("\n Matriz Resultado: (Quadrado da Matriz)");
         for (int i = 0; i < num; i++) {
             for (int j = 0; j < num; j++) {
                 System.out.printf("%5d", matrizResultado[i][j]);

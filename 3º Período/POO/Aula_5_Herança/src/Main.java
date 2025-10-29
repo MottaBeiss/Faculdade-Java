@@ -4,6 +4,8 @@
  * Gerente será subclasse de Funcionário e receberá 3 salarioBase
  * Secretária também será subclassse, mas receberá 2 salariosBase */
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) throws Exception {
         
@@ -15,6 +17,20 @@ public class Main {
 
         Secretaria secretaria = new Secretaria(3, "33333333333","Joana");
         System.out.println(secretaria.calcularSalario());
+
+
+        ArrayList<Funcionario> funcionarios = new ArrayList<>(); // Polimorfismo
+        funcionarios.add(gerente1);
+        funcionarios.add(secretaria);
+        funcionarios.add(funcionario);
+        
+        double salarioTotal = 0.0;
+
+        for(Funcionario f: funcionarios){
+            salarioTotal += f.calcularSalario();
+        }
+
+        System.out.println("Soma dos salários: " + salarioTotal);
 
     }
 }
