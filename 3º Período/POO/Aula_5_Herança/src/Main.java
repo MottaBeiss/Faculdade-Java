@@ -10,27 +10,37 @@ public class Main {
     public static void main(String[] args) throws Exception {
         
         Gerente gerente1 = new Gerente (1, "11111111111", "Arthur");
-        System.out.println(gerente1.calcularSalario());
+        //System.out.println(gerente1.getSalario());
 
-        Funcionario funcionario = new Funcionario(2, "22222222222", "Rebeca");
-        System.out.println(funcionario.calcularSalario());
+        /*Funcionario funcionario = new Funcionario(2, "22222222222", "Rebeca", 1); -> Depois que colocamos Funcionario como uma classe abstrata, não se pode ter um objeto <-
+        System.out.println(funcionario.getSalario());*/ 
+
+        Estagiario estagiario = new Estagiario(2,"22222222222", "Rebeca");
 
         Secretaria secretaria = new Secretaria(3, "33333333333","Joana");
-        System.out.println(secretaria.calcularSalario());
+        //System.out.println(secretaria.getSalario());
 
+        System.out.println();
 
-        ArrayList<Funcionario> funcionarios = new ArrayList<>(); // Polimorfismo
+        ArrayList<Funcionario> funcionarios = new ArrayList<>(); // Exemplo de Polimorfismo -> Quando um objeto pode assumir variadas formas
         funcionarios.add(gerente1);
         funcionarios.add(secretaria);
-        funcionarios.add(funcionario);
+        //funcionarios.add(funcionario);
+        funcionarios.add(estagiario);
         
         double salarioTotal = 0.0;
 
         for(Funcionario f: funcionarios){
-            salarioTotal += f.calcularSalario();
+            System.out.println(f.nome);
+            f.imprimirCargo();
+
+            System.out.println();
+
+            salarioTotal += f.getSalario();
         }
 
-        System.out.println("Soma dos salários: " + salarioTotal);
+        System.out.println("\nSoma dos salários: " + salarioTotal);
+        System.out.println();
 
     }
 }
