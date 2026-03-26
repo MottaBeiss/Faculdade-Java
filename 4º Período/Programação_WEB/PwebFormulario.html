@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro - Guilda dos Aventureiros</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+
+</html>
+<body>
+    
+    <h1>Cadastre-se e seja um aventureiro</h1>
+
+    <form name="Formulário de Cadastro" method="post">
+
+        Nome:
+        <input type="text" id="nome" name="nome" size="50" maxlength="50" > <br/>
+
+        Endereço:
+        <input type="text" id="endereco" name="endereco" size="50" maxlength="100" > <br/>
+
+        Bairo:
+        <input type="text" id="bairro" name="bairro" size="20" maxlength="50" >
+
+        Cidade:
+        <input type="text" id="cidade" name="cidade" size="20" maxlength="50" > <br/>
+
+        CEP:
+        <input type="text" id="cep" name="cep" size="10" maxlength="10" > 
+
+        Estado:
+        <select name="estado" id="estado">
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espírito Santo</option>
+        </select> <br/>
+
+        Preferência:
+        <input type="checkbox" id="guerreiro" name="preferencia" value="Guerreiro"> Guerreiro
+        <input type="checkbox" id="mago" name="preferencia" value="Mago"> Mago
+        <input type="checkbox" id="arqueiro" name="preferencia" value="Arqueiro"> Arqueiro <br/>
+
+        Tipo de viagem:
+        <input type="radio" id="aventura" name="tipo_viagem" value="Aventura"> Aventura
+        <input type="radio" id="exploracao" name="tipo_viagem" value="Exploração"> Exploração <br/>
+
+        Observações:<br/>
+        <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Digite suas observações aqui..."></textarea> <br/>
+        
+
+       
+    </form>
+
+</body>

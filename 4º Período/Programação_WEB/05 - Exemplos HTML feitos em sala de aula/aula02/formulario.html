@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {color: blue;
+        border-color: red;
+        border-width: 2px;
+        border-style: solid;
+        width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro de aluno</legend>
+        <datalist id="listanome">
+            <option value="Fulano"></option>
+            <option value="Ciclano">            
+            </option>
+            <option value="Beltrano"></option>
+        </datalist>
+    <form action="resposta.php" method="post">
+        <label for="nome"> Nome:</label>
+        <input type="text" id="nome" name="nome" size="5" maxlength="2"  value="Fulano" list="listanome"/></br>
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" /></br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" /></br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" max="65" /><br/>
+        <input type="hidden" name="anime" value="Naruto" />
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao"></textarea><br/>
+        <label for="formacao">Formação:</label>
+
+        <select name="formacao" size="3">
+            <option value="1">Ensino Fundamental</option>
+            <option value="2">Ensino Médio</option>
+            <option value="3">Graduação</option>
+            <option value="4" selected>Mestrado</option>
+            <option value="5" >Doutorado</option>
+        </select><br/>
+        <input type="checkbox" name="termo" value="sim" checked/>Deseja aceitar os termos? <br/>
+
+        Qual a sua altura?
+        <input type="radio" name="altura" value="Baixo"/>Baixa
+        <input type="radio" name="altura" value="Média" checked/>Média
+        <input type="radio" name="altura" value="Alta"/>Alta
+        <br/>
+        <input type="file" name="arquivo"/>
+        <input type="reset" value="Limpar" />
+        <input type="submit" value="Enviar" />
+        <br/>
+        <input type="button" value="Olá" onclick="alert('Olá mundo!')"/>
+    </form>
+    </fieldset>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+            h1,h2 {color: red} 
+            p { text-align: center; color: green; font-family:arial }
+
+            .direita { text-align: right }
+            p.centro { text-align: center }
+            p#noticia { color: blue; border-width: 1px; border-style: dotted;  text-align: center }
+            p#título { color: yellow; border-width: 2px; border-style: solid;  text-align: center; font-size: x-large; }
